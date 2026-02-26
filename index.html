@@ -3,157 +3,330 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CREDFÁCIL | Simulação de Empréstimo</title>
+<title>CREDFÁCIL | Liliane A.</title>
 
 <style>
 body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,#0f5132,#14532d);
-    color:white;
-    text-align:center;
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f8fff8;
+color:#333;
 }
 
-.container{
-    padding:30px 20px;
-    max-width:500px;
-    margin:auto;
+header{
+background:white;
+padding:20px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
-.logo{
-    width:180px;
-    margin-bottom:15px;
+header img{
+max-height:90px;
+}
+
+.hero{
+padding:50px 20px;
+text-align:center;
+background:linear-gradient(135deg,#e9fff0,#fff7ed);
+}
+
+.profile{
+margin-top:30px;
+}
+
+.profile img{
+width:180px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+border:5px solid #fff;
 }
 
 h1{
-    font-size:26px;
-    margin-bottom:10px;
+color:#0a7c4a;
+font-size:28px;
 }
 
-.sub{
-    font-size:15px;
-    opacity:0.9;
-    margin-bottom:25px;
+h2{
+color:#f57c00;
+}
+
+.btn-whatsapp{
+background:#25D366;
+color:white;
+padding:15px 25px;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section{
+padding:50px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    color:#333;
-    padding:20px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 input, select{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    border-radius:10px;
-    border:1px solid #ccc;
-    font-size:14px;
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ddd;
 }
 
 button{
-    width:100%;
-    padding:14px;
-    background:#f59e0b;
-    color:white;
-    border:none;
-    border-radius:12px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-    margin-top:10px;
-    transition:0.3s;
+background:#f57c00;
+color:white;
+padding:15px;
+border:none;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
+width:100%;
 }
 
-button:hover{
-    background:#d97706;
-}
-
-.consultora{
-    margin-top:30px;
-}
-
-.consultora img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    border:4px solid #f59e0b;
-    box-shadow:0 0 20px rgba(0,0,0,0.4);
-    object-fit:cover;
+.faq-item{
+margin-bottom:15px;
 }
 
 footer{
-    margin-top:30px;
-    font-size:12px;
-    opacity:0.7;
+background:#0a7c4a;
+color:white;
+padding:30px 20px;
+text-align:center;
+font-size:12px;
+}
+
+.stars{
+color:#fbc02d;
+font-size:18px;
+}
+
+.badges{
+text-align:center;
+margin-top:20px;
+}
+
+.badges img{
+height:60px;
+margin:10px;
+}
+
+.mascote{
+position:fixed;
+bottom:20px;
+right:20px;
+width:80px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<header>
+<img src="LOGO-CREDFACIL.png" alt="Logo Credfácil">
+</header>
 
-<img src="LOGO.png" class="logo">
+<section class="hero">
+<h1>Correspondente Bancária Certificada</h1>
+<h2>Atendimento personalizado e seguro</h2>
 
-<h1>Simule seu Empréstimo Agora</h1>
-<p class="sub">Atendimento rápido e personalizado via WhatsApp</p>
+<div class="profile">
+<img src="FOTO-LILIANE.jpg" alt="Liliane A.">
+<h2>Liliane A.</h2>
+<p>15+ anos de experiência no mercado financeiro<br>
+Maricá - Rio de Janeiro<br>
+Atendimento personalizado para atender sua necessidade.</p>
+</div>
+
+<a class="btn-whatsapp" href="https://wa.me/5521972208880?text=Olá%20quero%20fazer%20uma%20simulação%20de%20crédito">
+Solicitar Simulação no WhatsApp
+</a>
+</section>
+
+<section class="section">
+<h2>Modalidades de Crédito</h2>
+
+<div class="cards">
 
 <div class="card">
+<h3>INSS</h3>
+<p>Margem nova, portabilidade e refinanciamento para aposentados e pensionistas.</p>
+</div>
 
-<form id="simulacaoForm">
+<div class="card">
+<h3>Servidores Públicos</h3>
+<p>Municipais, Estaduais e Federais.</p>
+</div>
 
+<div class="card">
+<h3>SIAPE e Forças Armadas</h3>
+<p>Condições especiais e taxas reduzidas.</p>
+</div>
+
+<div class="card">
+<h3>Consignado CLT</h3>
+<p>Desconto direto em folha.</p>
+</div>
+
+<div class="card">
+<h3>Conta de Luz</h3>
+<p>Empréstimo com desconto na conta de energia.</p>
+</div>
+
+<div class="card">
+<h3>Bolsa Família</h3>
+<p>Crédito com desconto no benefício.</p>
+</div>
+
+<div class="card">
+<h3>Empréstimo Pessoal</h3>
+<p>Análise de score e rating. Carnê ou boleto.</p>
+</div>
+
+<div class="card">
+<h3>Antecipação FGTS</h3>
+<p>Saque-aniversário antecipado.</p>
+</div>
+
+<div class="card">
+<h3>Financiamentos</h3>
+<p>Veículos e empréstimo com garantia.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Simule Seu Crédito</h2>
+
+<form onsubmit="enviarWhats(event)">
 <input type="text" id="nome" placeholder="Nome completo" required>
 <input type="text" id="cpf" placeholder="CPF" required>
 <input type="date" id="nascimento" required>
+<input type="text" id="cep" placeholder="CEP" required>
+<input type="text" id="profissao" placeholder="Profissão" required>
 
-<select id="situacao" required>
-<option value="">Você é:</option>
-<option>Carteira assinada</option>
-<option>Aposentado / Pensionista INSS</option>
+<select id="perfil">
+<option>Aposentado</option>
+<option>Pensionista</option>
 <option>Servidor Público</option>
 <option>SIAPE</option>
 <option>Forças Armadas</option>
-<option>Possui conta de luz (ENEL) no seu nome</option>
+<option>CLT</option>
+<option>Autônomo</option>
+<option>Negativado</option>
+<option>Conta de luz no nome</option>
 </select>
 
-<button type="submit">Quero fazer uma simulação!</button>
-
+<button type="submit">Enviar para WhatsApp</button>
 </form>
+</section>
 
+<section class="section">
+<h2>Depoimentos</h2>
+
+<div class="card">
+<p>"Atendimento impecável e rápido!"</p>
+<div class="stars">★★★★★</div>
 </div>
 
-<div class="consultora">
-<img src="CONSULTORA.jpg">
-<p><strong>Consultora Liliane</strong><br>Maricá - RJ</p>
+<div class="card">
+<p>"Consegui meu crédito com segurança."</p>
+<div class="stars">★★★★★</div>
 </div>
+
+<div class="card">
+<p>"Super recomendo a Liliane!"</p>
+<div class="stars">★★★★★</div>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Dúvidas Frequentes</h2>
+
+<div class="faq-item">
+<strong>O crédito é seguro?</strong>
+<p>Sim. Trabalhamos com instituições autorizadas e regulamentadas.</p>
+</div>
+
+<div class="faq-item">
+<strong>Quanto tempo para aprovação?</strong>
+<p>Análise rápida e retorno no mesmo dia.</p>
+</div>
+
+<div class="faq-item">
+<strong>Precisa ter conta em banco?</strong>
+<p>Não obrigatoriamente. Avaliamos cada caso.</p>
+</div>
+
+</section>
+
+<div class="badges">
+<img src="SELO-FEBRABAN.png" alt="FEBRABAN">
+<img src="SELO-AMF.png" alt="AMF Credfácil">
+<img src="SELO-SEGURANCA.png" alt="Segurança">
+</div>
+
+<img src="MASCOTE.png" class="mascote" alt="Mascote">
 
 <footer>
-CREDFÁCIL © 2026 - Solicitações de Empréstimos
+CREDFÁCIL | Correspondente Bancária Certificada<br>
+CNPJ 49.777.117/0001-75<br>
+Certificação FEBRABAN<br>
+© 2026 Todos os direitos reservados
 </footer>
 
-</div>
-
 <script>
-document.getElementById("simulacaoForm").addEventListener("submit", function(e){
-e.preventDefault();
+function enviarWhats(event){
+event.preventDefault();
 
 var nome = document.getElementById("nome").value;
 var cpf = document.getElementById("cpf").value;
-var nascimento = document.getElementById("nascimento").value;
-var situacao = document.getElementById("situacao").value;
+var nasc = document.getElementById("nascimento").value;
+var cep = document.getElementById("cep").value;
+var prof = document.getElementById("profissao").value;
+var perfil = document.getElementById("perfil").value;
 
-var mensagem = "Quero fazer uma simulação!%0A%0A" +
-"Nome: " + nome + "%0A" +
-"CPF: " + cpf + "%0A" +
-"Nascimento: " + nascimento + "%0A" +
-"Situação: " + situacao;
+var msg = `Olá, quero simular crédito:%0A
+Nome: ${nome}%0A
+CPF: ${cpf}%0A
+Nascimento: ${nasc}%0A
+CEP: ${cep}%0A
+Profissão: ${prof}%0A
+Perfil: ${perfil}`;
 
-window.open("https://wa.me/5521972208880?text=" + mensagem, "_blank");
-});
+window.open(`https://wa.me/5521972208880?text=${msg}`, '_blank');
+}
 </script>
 
 </body>
-  </html>
+</html>
